@@ -6,4 +6,9 @@ void mtk_wdt_reset(void) {
     wdt_regs[6] = 0x1971;
     wdt_regs[0] = 0x22000014;
     wdt_regs[5] = 0x1209;
+
+}
+
+void mtk_wdt_disable(void) {
+    ((void (*)(void))(CONFIG_MTK_WDT_DISABLE_ADDRESS | 1))();
 }
