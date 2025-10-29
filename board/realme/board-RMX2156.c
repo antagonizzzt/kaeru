@@ -6,6 +6,7 @@
 
 #include <board_ops.h>
 #include <lib/thread.h>
+#include <wdt/mtk_wdt.h>
 
 #define VOLUME_UP 17
 #define VOLUME_DOWN 1
